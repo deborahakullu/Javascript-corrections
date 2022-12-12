@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Document</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="form">
+      <header>
+        <h1>CUSTOMER FORM</h1>
+      </header>
+      
+       
+      <form >
+        <label> Customer's name</label>
+        <input type="text" id="first-name" onclick="validateName()" required/><br><br>
+        <span id="name-error"></span>
+        
+        <label>Email address</label>
+        <input type="email" id="email-address" onclick="validateEmail()" placeholder="Enter email address" required><br><br>
+        <span id="email-error"></span>
+        <label>Password</label>
+        <input type="password" id="Password" onclick="validatePassword()"  required><br><br>
+        <span id="password-error"></span>
+        
+        
+        <button onclick="return validateForm()">Submit</button>
+        <span id="submit-error"></span>
+      
+    </div>
+    </main>
+
+
+    <script src="form.js" async defer></script>
+  </body>
+</html>

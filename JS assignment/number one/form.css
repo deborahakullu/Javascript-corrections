@@ -1,0 +1,19 @@
+.form{
+    padding: 20px;
+    margin: 15px;
+    border: 1px black solid;
+    align-items: center;
+    background-color: black;
+    width: 400px;
+    color: antiquewhite;
+    
+}
+
+#firstname{
+    margin-left: 20px;
+}
+
+
+#email address{
+    margin-left: 20px;
+}

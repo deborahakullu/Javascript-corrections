@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="three.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>Numeric Error</h1>
+      <div class="submain">
+        <form name="form" onsubmit="return Validate()">
+          Name:
+          <input type="text" ,placeholder="your name" /> <br />
+          <br />
+          Email:
+          <input type="text" ,placeholder="your email" /> <br />
+          <br />
+          Tel No:
+          <input type="text" , placeholder="phone number" , id="btn" ) /><br/>
+          <span id="message"></span> <br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function Validate() {
+        var n = document.form.btn.value;
+        if (isNaN(n)) {
+          document.getElementById("message").innerHTML =
+            "Error, enter Numeric value";
+            
+          
+            
+          return false;
+        }
+      }
+    </script>
+    
+      
+  </body>
+</html>
